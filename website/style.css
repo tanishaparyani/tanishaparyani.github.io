@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('fonts/Silk\ Serif\ Light.otf') format('opentype'), /* Fallback if needed */
-         url('fonts/Silk\ Serif\ Light.woff2') format('woff2'), 
-         url('fonts/Silk\ Serif\ Light.woff') format('woff');
+    src: url('fonts/Silk\ Serif\ Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
