@@ -45,6 +45,7 @@ header {
 
 .tulip-line-art {
     height: 800px; /* Adjust height as per your need */
+    transform: scale(0.5);
     width: auto; /* Maintain the aspect ratio */
     opacity: 0;
     animation: fadeGrowTulip 4s ease-in-out forwards; /* Slower animation for smoother effect */
@@ -55,10 +56,12 @@ header {
 @keyframes fadeGrowTulip {
     0% {
         opacity: 0;
+        transform: scale(0.5);
         mask-image: linear-gradient(to top, black 0%, transparent 100%);
     }
     100% {
         opacity: 1;
+        transform: scale(1);
         mask-image: linear-gradient(to top, black 100%, transparent 0%);
     }
 }
@@ -70,5 +73,5 @@ footer {
     font-size: 1.2rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 10;
+    bottom: 0%;
 }
