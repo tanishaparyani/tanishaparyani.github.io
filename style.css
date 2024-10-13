@@ -44,27 +44,28 @@ header {
 }
 
 .tulip-line-art {
-    height: 800px; /* Adjust height as per your need */
-    transform: scale(0.5);
-    width: auto; /* Maintain the aspect ratio */
+    height: 800px; /* Adjust height as needed */
+    width: auto;
     opacity: 0;
-    animation: fadeGrowTulip 4s ease-in-out forwards; /* Slower animation for smoother effect */
-    mask-image: linear-gradient(to top, black 0%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+    transform: scale(0.5); /* Start smaller */
+    animation: fadeGrowTulip 2s ease-out forwards; /* Duration and easing */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 @keyframes fadeGrowTulip {
     0% {
         opacity: 0;
-        transform: scale(0.5);
-        mask-image: linear-gradient(to top, black 0%, transparent 100%);
+        transform: scale(0.5); /* Start at 50% size */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
     100% {
         opacity: 1;
-        transform: scale(1);
-        mask-image: linear-gradient(to top, black 100%, transparent 0%);
+        transform: scale(1); /* End at full size */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%);
     }
 }
+
 
 footer {
     background-color: var(--pearl-white);
