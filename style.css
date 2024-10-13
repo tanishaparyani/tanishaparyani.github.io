@@ -34,7 +34,7 @@ header {
 
 .tulip-container {
     position: fixed;
-    bottom: 50;
+    bottom: 100;
     width: 100%; /* Set the width of the container */
     height: auto;
     display: flex;
