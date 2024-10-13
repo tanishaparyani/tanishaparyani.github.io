@@ -47,7 +47,7 @@ header {
     height: 800px; /* Adjust height as needed */
     width: auto;
     opacity: 0;
-    transform: scale(0.5); /* Start smaller */
+    transform: scale(0.90); /* Start smaller */
     animation: fadeGrowTulip 2s ease-out forwards; /* Duration and easing */
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -56,7 +56,7 @@ header {
 @keyframes fadeGrowTulip {
     0% {
         opacity: 0;
-        transform: scale(0.5); /* Start at 50% size */
+        transform: scale(0.90); /* Start at 50% size */
         mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
     100% {
