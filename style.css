@@ -44,8 +44,8 @@ header {
 }
 
 .tulip-line-art {
-    width: 200px; /* Adjust this width to control the size */
-    height: auto;
+    height: 800px;
+    width: auto; /* Adjust this width to control the size */
     opacity: 0; /* Start with opacity 0 */
     animation: fadeGrowTulip 5s ease-out forwards; /* More gradual fade */
     mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
@@ -56,10 +56,6 @@ header {
     0% {
         opacity: 0;
         mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Fully hidden */
-    }
-    50% {
-        opacity: 0.5;
-        mask-image: linear-gradient(to top, black 50%, transparent 50%); /* Partially revealed */
     }
     100% {
         opacity: 1;
