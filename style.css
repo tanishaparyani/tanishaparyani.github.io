@@ -33,7 +33,7 @@ header {
 
 .tulip-container {
     position: relative;
-    width: 50; /* Adjust based on your layout */
+    width: 50%; /* Adjust based on your layout */
     height: 50%; /* Adjust based on your layout */
     display: flex;
     justify-content: center;
