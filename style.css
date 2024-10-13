@@ -47,7 +47,7 @@ header {
     width: auto; /* Adjust this width to shrink the image */
      /* Keep the aspect ratio intact */
     opacity: 0; /* Start with opacity 0 */
-    animation: fadeGrowTulip 1s ease-out forwards;
+    animation: fadeGrowTulip 2s ease-out forwards;
     mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
     -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%); /* For WebKit browsers */
 }
