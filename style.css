@@ -40,7 +40,7 @@ header {
     justify-content: flex-start; /* Align the tulip to the left */
     align-items: flex-start; /* Move the tulip upwards in the container */
     padding-left: 20px; /* Add some padding if needed */
-    padding-top: 500px; /* Adjust this value to move the image higher */
+    padding-top: 1000px; /* Adjust this value to move the image higher */
 }
 
 .tulip-line-art {
