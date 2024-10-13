@@ -41,7 +41,7 @@ header {
 }
 
 .tulip-line-art {
-    width: 100%; /* Set the width of the image */
+    width: 50%; /* Set the width of the image */
     opacity: 0;
     transform: translateY(100%);
     animation: growTulips 3s ease-out forwards;
