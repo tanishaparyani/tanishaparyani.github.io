@@ -55,7 +55,7 @@ body {
     width: 150px;
     height: auto;
     opacity: 0;
-    animation: growTulip 1.5s ease-out forwards;
+    animation: growTulip s ease-out forwards;
     mask-image: linear-gradient(to top, black 0%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
 }
