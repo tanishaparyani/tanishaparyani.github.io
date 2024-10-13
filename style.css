@@ -34,21 +34,20 @@ header {
 
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
-    top: 20%; /* Adjust as necessary */
+    top: 0%; /* Adjust as necessary */
     left: 0; /* Align to the left side of the screen */
     width: 150px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 20px; /* Optional padding to move the tulip slightly inward */
 }
 
 .tulip-line-art {
-    height: 600px; /* Adjust height as per your need */
+    height: 800px; /* Adjust height as per your need */
     width: auto; /* Maintain the aspect ratio */
     opacity: 0;
-    animation: fadeGrowTulip 4s ease-in-out forwards; /* Slower animation for smoother effect */
+    animation: fadeGrowTulip 2s ease-in-out forwards; /* Slower animation for smoother effect */
     mask-image: linear-gradient(to top, black 0%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
 }
