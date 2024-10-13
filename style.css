@@ -35,19 +35,19 @@ header {
 .tulip-container {
     position: relative;
     width: 100%; /* Set the width of the container */
-    height: auto; /* Adjust the height automatically */
+    height: auto;
     display: flex;
-    justify-content: flex-start; /* Aligns the image to the left */
-    align-items: center;
+    justify-content: flex-start; /* Align the tulip to the left */
+    align-items: flex-start; /* Move the tulip upwards in the container */
     padding-left: 20px; /* Add some padding if needed */
+    padding-top: 50px; /* Adjust this value to move the image higher */
 }
 
 .tulip-line-art {
-    height: 1000px;
-    width: auto; /* Adjust this width to shrink the image */
-     /* Keep the aspect ratio intact */
+    width: 200px; /* Adjust this width to control the size */
+    height: auto;
     opacity: 0; /* Start with opacity 0 */
-    animation: fadeGrowTulip 2s ease-out forwards;
+    animation: fadeGrowTulip 5s ease-out forwards; /* More gradual fade */
     mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
     -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%); /* For WebKit browsers */
 }
@@ -57,12 +57,14 @@ header {
         opacity: 0;
         mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Fully hidden */
     }
-
+    50% {
+        opacity: 0.5;
+        mask-image: linear-gradient(to top, black 50%, transparent 50%); /* Partially revealed */
+    }
     100% {
         opacity: 1;
         mask-image: linear-gradient(to top, black 100%, transparent 0%); /* Fully visible */
     }
 }
-
 
 /* The rest of your styles remain the same */
