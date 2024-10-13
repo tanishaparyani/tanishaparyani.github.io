@@ -31,4 +31,32 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.tulip-container {
+    position: relative;
+    width: 100%; /* Adjust based on your layout */
+    height: 100%; /* Adjust based on your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tulip-line-art {
+    width: 100%; /* Set the width of the image */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: growTulips 10s ease-out forwards;
+}
+
+@keyframes growTulips {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* The rest of your styles remain the same */
