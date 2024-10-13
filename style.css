@@ -33,15 +33,15 @@ header {
 
 .tulip-container {
     position: relative;
-    width: 50%; /* Adjust based on your layout */
-    height: 50%; /* Adjust based on your layout */
+    width: 100%; /* Adjust based on your layout */
+    height: 100%; /* Adjust based on your layout */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tulip-line-art {
-    width: 50%; /* Set the width of the image */
+    width: 100%; /* Set the width of the image */
     opacity: 0;
     transform: translateY(100%);
     animation: growTulips 3s ease-out forwards;
