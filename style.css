@@ -11,7 +11,7 @@
     --lavender-purple: #e6d6ff;
     --beige: #f5e1d3;
     --accent-color: #cda8d6;
-    --black: #000000
+    --black: #000000;
 }
 
 body {
@@ -33,34 +33,43 @@ header {
 }
 
 .tulip-container {
-    position: relative;
-    bottom: 50;
-    width: 100%; /* Set the width of the container */
+    position: absolute; /* Change to absolute for positioning */
+    top: 20%; /* Adjust as necessary */
+    left: 0; /* Align to the left side of the screen */
+    width: 150px; /* Control the container width */
     height: auto;
     display: flex;
-    justify-content: flex-start; /* Align the tulip to the left */
-    align-items: flex-start; /* Move the tulip upwards in the container */
-    
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px; /* Optional padding to move the tulip slightly inward */
 }
 
 .tulip-line-art {
-    height: 800px;
-    width: auto; /* Adjust this width to control the size */
-    opacity: 0; /* Start with opacity 0 */
-    animation: fadeGrowTulip 2s ease-out forwards; /* More gradual fade */
-    mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
-    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%); /* For WebKit browsers */
+    height: 600px; /* Adjust height as per your need */
+    width: auto; /* Maintain the aspect ratio */
+    opacity: 0;
+    animation: fadeGrowTulip 4s ease-in-out forwards; /* Slower animation for smoother effect */
+    mask-image: linear-gradient(to top, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
 }
 
 @keyframes fadeGrowTulip {
     0% {
         opacity: 0;
-        mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Fully hidden */
+        mask-image: linear-gradient(to top, black 0%, transparent 100%);
     }
     100% {
         opacity: 1;
-        mask-image: linear-gradient(to top, black 100%, transparent 0%); /* Fully visible */
+        mask-image: linear-gradient(to top, black 100%, transparent 0%);
     }
 }
 
-/* The rest of your styles remain the same */
+footer {
+    background-color: var(--pearl-white);
+    color: var(--black);
+    padding: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
