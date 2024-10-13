@@ -33,32 +33,31 @@ header {
 
 .tulip-container {
     position: relative;
-    width: 100%; /* Adjust based on your layout */
-    height: 100%; /* Adjust based on your layout */
+    width: 100%; /* Set the width of the container */
+    height: auto; /* Adjust the height automatically */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns the image to the left */
     align-items: center;
+    padding-left: 20px; /* Add some padding if needed */
 }
 
 .tulip-line-art {
-    width: 100%; /* Set the width of the image */
-    opacity: 0;
-    transform: translateY(100%);
-    animation: growTulips 3s ease-out forwards;
+    width: 200px; /* Adjust this width to shrink the image */
+    height: auto; /* Keep the aspect ratio intact */
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeGrowTulip 3s ease-out forwards;
+    mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%); /* For WebKit browsers */
 }
 
-@keyframes growTulips {
+@keyframes fadeGrowTulip {
     0% {
         opacity: 0;
-        transform: translateY(100%);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(50%);
+        mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Fully hidden */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        mask-image: linear-gradient(to top, black 100%, transparent 0%); /* Fully visible */
     }
 }
 
