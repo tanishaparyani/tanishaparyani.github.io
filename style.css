@@ -7,10 +7,11 @@
 
 :root {
     --pastel-pink: #f9d3de;
-    --pearl-white: #fdfcfb;
+    --pearl-white: #F8F6F0;
     --lavender-purple: #e6d6ff;
     --beige: #f5e1d3;
     --accent-color: #cda8d6;
+    --black: #000000
 }
 
 body {
@@ -21,8 +22,8 @@ body {
 }
 
 header {
-    background-color: var(--pastel-pink);
-    color: var(--pearl-white);
+    background-color: var(--pearl-white);
+    color: var(--black);
     padding: 20px;
     text-align: center;
     font-size: 2.5rem;
