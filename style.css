@@ -33,8 +33,7 @@ header {
 }
 
 .tulip-container {
-    position: fixed;
-    bottom: 100;
+    position: relative;
     width: 100%; /* Set the width of the container */
     height: auto;
     display: flex;
