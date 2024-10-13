@@ -47,7 +47,7 @@ header {
     width: auto; /* Adjust this width to shrink the image */
      /* Keep the aspect ratio intact */
     opacity: 0; /* Start with opacity 0 */
-    animation: fadeGrowTulip 3s ease-out forwards;
+    animation: fadeGrowTulip 1s ease-out forwards;
     mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Creates the growing effect */
     -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%); /* For WebKit browsers */
 }
@@ -56,19 +56,6 @@ header {
     0% {
         opacity: 0;
         mask-image: linear-gradient(to top, black 0%, transparent 100%); /* Fully hidden */
-    }
-    25% {
-        opacity: 0.25;
-        mask-image: linear-gradient(to top, black 25%, transparent 75%); /* Fully hidden */
-    }
-
-    50% {
-        opacity: 0.5;
-        mask-image: linear-gradient(to top, black 50%, transparent 50%); /* Fully hidden */
-    }
-    75% {
-        opacity: 0.75;
-        mask-image: linear-gradient(to top, black 75%, transparent 25%); /* Fully hidden */
     }
 
     100% {
