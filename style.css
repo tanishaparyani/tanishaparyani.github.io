@@ -35,7 +35,7 @@ header {
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
     top: 5%; /* Adjust as necessary */
-    left: 0%; /* Align to the left side of the screen */
+    left: -5%; /* Align to the left side of the screen */
     width: 150px; /* Control the container width */
     height: auto;
     display: flex;
@@ -48,7 +48,7 @@ header {
     width: auto;
     opacity: 0;
     transform: scale(0.95); /* Start smaller */
-    animation: fadeGrowTulip 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Custom easing for smoother effect */
+    animation: fadeGrowTulip 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Custom easing for smoother effect */
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
 }
