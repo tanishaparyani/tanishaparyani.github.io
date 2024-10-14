@@ -53,8 +53,7 @@ header {
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-@keyfram
-es fadeGrowTulip {
+@keyframes fadeGrowTulip {
     0% {
         opacity: 0;
         transform: scale(0.95); /* Start at 50% size */
