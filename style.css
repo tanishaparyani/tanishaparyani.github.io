@@ -44,27 +44,32 @@ header {
 }
 
 .tulip-line-art {
-    height: 800px; /* Adjust height as needed */
+    height: 600px;
     width: auto;
     opacity: 0;
     transform: scale(0.95); /* Start smaller */
-    animation: fadeGrowTulip 2s ease forwards; /* Duration and easing */
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    animation: fadeGrowTulip 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Custom easing for smoother effect */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
 }
 
 @keyframes fadeGrowTulip {
     0% {
         opacity: 0;
-        transform: scale(0.95); /* Start at 50% size */
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        transform: scale(0.95);
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
+    }
+    50% {
+        opacity: 0.5;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%); /* Lower part becomes visible */
     }
     100% {
         opacity: 1;
         transform: scale(1); /* End at full size */
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%);
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%); /* Fully visible */
     }
 }
+
 
 
 footer {
