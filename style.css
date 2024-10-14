@@ -35,13 +35,12 @@ header {
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
     top: 0%; /* Adjust as necessary */
-    left: -10; /* Align to the left side of the screen */
+    left: -10%; /* Align to the left side of the screen */
     width: 150px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-right: 200px;
 }
 
 .tulip-line-art {
