@@ -48,7 +48,7 @@ header {
     width: auto;
     opacity: 0;
     transform: scale(0.95); /* Start smaller */
-    animation: fadeGrowTulip 2s ease-out forwards; /* Duration and easing */
+    animation: fadeGrowTulip 3s ease-out forwards; /* Duration and easing */
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
