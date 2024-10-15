@@ -35,17 +35,18 @@ header {
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: -2%; /* Adjust as necessary */
-    left: -4%; /* Align to the left side of the screen */
+    left: -4.5%; /* Align to the left side of the screen */
     width: 375px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    rotate: -10deg;
 }
 
 .tulip-line-art {
-    height: 650px;
-    width: 375px;
+    height: 600px;
+    width: 345px;
     opacity: 0;
     transform: scale(0.95) translateY(10px); /* Start smaller and lower */
     animation: fadeGrowTulip 1s ease-out forwards; /* Smooth easing */
@@ -69,17 +70,18 @@ header {
 .tulip2-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: 0%; /* Adjust as necessary */
-    left: 10%; /* Align to the left side of the screen */
+    left: 5%; /* Align to the left side of the screen */
     width: 250px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    rotate: 10deg;
 }
 
 .tulip2-line-art {
-    height: 650px;
-    width: 250px;
+    height: 660px;
+    width: 255px;
     opacity: 0;
     transform: scale(0.95) translateY(10px); /* Start smaller and lower */
     animation: fadeGrowTulip2 1s ease-out 0.5s forwards; /* Smooth easing */
