@@ -34,7 +34,7 @@ header {
 
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
-    bottom: 0%; /* Adjust as necessary */
+    bottom: -2%; /* Adjust as necessary */
     left: -2.5%; /* Align to the left side of the screen */
     width: 375px; /* Control the container width */
     height: auto;
@@ -69,8 +69,8 @@ header {
 .tulip2-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: 0%; /* Adjust as necessary */
-    right: -2.5%; /* Align to the left side of the screen */
-    width: 200px; /* Control the container width */
+    right: 0%; /* Align to the left side of the screen */
+    width: 250px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -79,7 +79,7 @@ header {
 
 .tulip2-line-art {
     height: 650px;
-    width: 200px;
+    width: 250px;
     opacity: 0;
     transform: scale(0.95) translateY(10px); /* Start smaller and lower */
     animation: fadeGrowTulip2 1s ease-out 2s forwards; /* Smooth easing */
