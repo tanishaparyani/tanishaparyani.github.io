@@ -34,9 +34,9 @@ header {
 
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
-    top: 5%; /* Adjust as necessary */
+    bottom: 2%; /* Adjust as necessary */
     left: -2.5%; /* Align to the left side of the screen */
-    width: 400px; /* Control the container width */
+    width: 350px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -45,7 +45,7 @@ header {
 
 .tulip-line-art {
     height: 600px;
-    width: 400px;
+    width: 350px;
     opacity: 0;
     transform: scale(0.95) translateY(10px); /* Start smaller and lower */
     animation: fadeGrowTulip 1s ease-out forwards; /* Smooth easing */
