@@ -35,7 +35,7 @@ header {
 .tulip-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: -2%; /* Adjust as necessary */
-    left: -2.5%; /* Align to the left side of the screen */
+    left: -4%; /* Align to the left side of the screen */
     width: 375px; /* Control the container width */
     height: auto;
     display: flex;
@@ -69,7 +69,7 @@ header {
 .tulip2-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: 0%; /* Adjust as necessary */
-    left: 2%; /* Align to the left side of the screen */
+    left: 10%; /* Align to the left side of the screen */
     width: 250px; /* Control the container width */
     height: auto;
     display: flex;
