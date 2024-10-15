@@ -36,7 +36,7 @@ header {
     position: absolute; /* Change to absolute for positioning */
     bottom: 2%; /* Adjust as necessary */
     left: -2.5%; /* Align to the left side of the screen */
-    width: 350px; /* Control the container width */
+    width: 375px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -44,8 +44,8 @@ header {
 }
 
 .tulip-line-art {
-    height: 600px;
-    width: 350px;
+    height: 650px;
+    width: 375px;
     opacity: 0;
     transform: scale(0.95) translateY(10px); /* Start smaller and lower */
     animation: fadeGrowTulip 1s ease-out forwards; /* Smooth easing */
@@ -66,7 +66,39 @@ header {
     }
 }
 
+.tulip2-container {
+    position: absolute; /* Change to absolute for positioning */
+    bottom: 2%; /* Adjust as necessary */
+    right: -2.5%; /* Align to the left side of the screen */
+    width: 400px; /* Control the container width */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
+.tulip2-line-art {
+    height: 700px;
+    width: 400px;
+    opacity: 0;
+    transform: scale(0.95) translateY(10px); /* Start smaller and lower */
+    animation: fadeGrowTulip2 1s ease-out forwards; /* Smooth easing */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes fadeGrowTulip2 {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px); /* Start small and lower */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px); /* End at full size and position */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%); /* Fully visible */
+    }
+}
 
 
 footer {
