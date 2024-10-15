@@ -70,13 +70,13 @@ header {
 .tulip2-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: 0%; /* Adjust as necessary */
-    left: 5%; /* Align to the left side of the screen */
+    left: 6.5%; /* Align to the left side of the screen */
     width: 250px; /* Control the container width */
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    rotate: 10deg;
+    rotate: 5deg;
 }
 
 .tulip2-line-art {
