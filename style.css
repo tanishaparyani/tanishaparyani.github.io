@@ -113,21 +113,20 @@ header {
     font-size: 4rem; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
-    animation: popIn 0.5s ease-out 1s forwards; /* Animation for the name */
+    animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
     animation-delay: 1s; /* Delay the name animation */
 }
 
-@keyframes popIn {
+@keyframes fadeInUp {
     0% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.5); /* Start smaller */
+        opacity: 0; /* Start invisible */
+        transform: translate(-50%, 20px); /* Start lower */
     }
     100% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1); /* End at normal size */
+        opacity: 1; /* End visible */
+        transform: translate(-50%, 0); /* End at normal position */
     }
 }
-
 
 footer {
     background-color: var(--pearl-white);
