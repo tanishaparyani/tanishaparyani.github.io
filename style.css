@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'nameFont';
+    src: url('fonts/Silk\ Serif\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --pastel-pink: #f9d3de;
     --pearl-white: #F8F6F0;
@@ -16,7 +23,7 @@
 
 body {
     background-color: var(--pearl-white);
-    font-family: 'MyCustomFont', sans-serif;
+    font-family: 'nameFont', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -110,7 +117,7 @@ header {
 }
 
 .name {
-    font-size: 4rem; /* Make the name large */
+    font-size: 3.5rem; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
