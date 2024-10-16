@@ -100,7 +100,7 @@ header {
     0% {
         opacity: 0;
         transform: scale(0.8) translateY(70px); /* Start small and lower */
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 17%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
     }
     100% {
         opacity: 1;
