@@ -112,12 +112,12 @@ header {
 .name-container {
     position: absolute;
     top: 40%; /* Center vertically */
-    left: 60%; /* Center horizontally */
+    left: 65%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position */
 }
 
 .name {
-    font-size: 3.5rem; /* Make the name large */
+    font-size: 3rem; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
