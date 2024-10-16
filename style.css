@@ -70,7 +70,7 @@ header {
 .tulip2-container {
     position: absolute; /* Change to absolute for positioning */
     bottom: 0%; /* Adjust as necessary */
-    left: 0%; /* Align to the left side of the screen */
+    left: 1%; /* Align to the left side of the screen */
     width: 200px; /* Control the container width */
     height: auto;
     display: flex;
