@@ -92,20 +92,16 @@ header {
     opacity: 0;
     transform: scale(0.8) translateY(70px); /* Start smaller and lower */
     animation: fadeGrowTulip2 1s ease-out forwards; /* Smooth easing */
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0) 100%);
 }
 
 @keyframes fadeGrowTulip2 {
     0% {
         opacity: 0;
         transform: scale(0.8) translateY(70px); /* Start small and lower */
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
     }
     100% {
         opacity: 1;
         transform: scale(1) translateY(0px); /* End at full size and position */
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%); /* Fully visible */
     }
 }
 
