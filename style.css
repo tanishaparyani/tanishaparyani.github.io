@@ -111,8 +111,8 @@ header {
 
 .name-container {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: 40%; /* Center vertically */
+    left: 60%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position */
 }
 
