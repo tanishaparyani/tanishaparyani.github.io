@@ -4,124 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --pastel-pink: #f9d3de;
-            --pearl-white: #fdfcfb;
-            --lavender-purple: #e6d6ff;
-            --beige: #f5e1d3;
-            --accent-color: #cda8d6;
-        }
-
-        body {
-            background-color: var(--pearl-white);
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--pastel-pink);
-            color: var(--pearl-white);
-            padding: 20px;
-            text-align: center;
-            font-size: 2.5rem;
-            font-family: 'Great Vibes', cursive;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--accent-color);
-            font-size: 1.2rem;
-            margin: 0 15px;
-            padding: 10px 20px;
-            background-color: var(--beige);
-            border-radius: 15px;
-            transition: background-color 0.3s;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            background-color: var(--lavender-purple);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .section {
-            background-color: var(--pastel-pink);
-            padding: 30px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .section h2 {
-            color: var(--lavender-purple);
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
-
-        p {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: var(--lavender-purple);
-            text-align: center;
-            padding: 15px;
-            color: var(--pearl-white);
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="fade" style="animation: fade ease 3.5s;">
+        <div class="navBar">
+            <div class="nav-left">
+                <h1 class="nav-name">tanisha ! </h1>
+            </div>
+            <div class="buttonGap">
+                <button class="homeButtons" id="home">Home</button>
+                <button class="homeButtons" id="about">About</button>
+                <button class="homeButtons" id="resume">Resume</button>
+                <button class="homeButtons" id="experiences">Experiences</button>
+                <button class="homeButtons" id="projects">Projects</button>
+            </div>
+        </div>
+    </div>
+    
 
-<header>
-    Welcome to My Portfolio
-</header>
+    <div class="tulip-container">
+        <img src="assets/tulip1.png" alt="Tulip Line Art" class="tulip-line-art">
+    </div>
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <div class="tulip2-container">
+        <img src="assets/tulip2.png" alt="Tulip Line Art 2" class="tulip2-line-art">
+    </div>
 
-<div class="container">
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hello! I'm a software engineer with a passion for design, full-stack development, and creating intuitive user interfaces.</p>
+    <!--Home section-->
+    <section id="home-section">
+        <div class="name-container">
+            <h1 class="name">tanisha paryani</h1>
+        </div>
+        <div class="name-caption-container">
+            <p class="nameCaption">emerging full-stack developer with a focus in human-computer interaction</p>
+        </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <p>Check out some of the exciting projects I've worked on, from web apps to machine learning models.</p>
+     <!-- About Section -->
+     <section id="about-section"> <!--separate section -->
+        <div class="section-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! My name is Tanisha Paryani and I'm an undergraduate Computer Science student at Georgia Institute of Technology with a passion for user-centric software design, artificial intelligence, sustainability, and mental health awareness. Through both research and personal projects, I've gained experience in software engineering and design.</p>
+                <p>Apart from my studies, I enjoy performing on my school's dance team, traveling, and baking!</p>
+            </div>
+            <div class="about-images">
+                <img class="pfp" src="assets/moi.png" alt="picture of me">
+                <img class="frame" src="assets/pookieframe.png" alt="picture frame">
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email or on my social media platforms.</p>
-    </section>
-</div>
 
-<footer>
-    © 2024 My Portfolio | Designed with love
-</footer>
+    <!-- Resume Section -->
+    <section id="resume-section">
+        <div class="section-container">
+            <h2>Resume</h2>
+            <p>here is resume</p>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences-section">
+        <div class="section-container">
+            <h2>Experiences</h2>
+            <p> experiences experiences experiencesexperiences experiences experiences experiences experiences </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <p>Check out my latest projects below!</p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+        document.getElementById("about").onclick = function () {
+            document.getElementById("about-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("resume").onclick = function () {
+            document.getElementById("resume-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("experiences").onclick = function () {
+            document.getElementById("experiences-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("projects").onclick = function () {
+            document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
+        };
+    </script>
+    
 
 </body>
 </html>
