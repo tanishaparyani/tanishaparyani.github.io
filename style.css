@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Silk\ Serif\ Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nameFont';
+    src: url('fonts/SilkSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sectionFont';
+    src: url('fonts/OptimaLTPro-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+    --pastel-pink: #f9d3de;
+    --pearl-white: #F8F6F0;
+    --lavender-purple: #e6d6ff;
+    --beige: #f5e1d3;
+    --rosepink:#e2d5d5;
+    --accent-color: #cda8d6;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--pearl-white);
+    font-family: 'nameFont', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.tulip-container {
+    position: absolute; /* Change to absolute for positioning */
+    bottom: -3.5vw; /* Adjust as necessary */
+    right: -3.5vw; /* Align to the left side of the screen */
+    width: 18vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    rotate: -5deg;
+}
+
+.tulip-line-art {
+    height: 35vw;
+    width: 18vw;
+    opacity: 0;
+    transform: scale(0.95) translateY(0.5vw); /* Start smaller and lower */
+    animation: fadeGrowTulip 1s ease-out 0.5 forwards; /* Smooth easing */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 17%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 17%, rgba(0, 0, 0, 0) 100%);
+    filter: brightness(0) invert(0) contrast(1.5);
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--pearl-white); /* Matches site theme */
+    padding: 1vw 2vw; /* Adds padding for spacing */
+    box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Makes it stay on top while scrolling */
+    top: 0;
+    z-index: 10; /* Ensures it stays above other elements */
+}
+
+.nav-left {
+    flex-grow: 0; /* Pushes buttons to the right */
+}
+
+.nav-name {
+    font-family: 'MyCustomFont', cursive; /* Matches site font */
+    color: var(--black); /* Text color */
+    font-size: 1.8vw; /* Adjust size as needed */
+    margin: 0; /* Removes default margin */
+}
+
+.buttonGap {
+    display: flex;
+    gap: 1vw; /* Adds spacing between buttons */
+}
+
+.homeButtons {
+    font-family: 'MyCustomFont', cursive; /* Matches site font */
+    font-size: 1vw;
+    background-color: var(--rosepink); /* Rose pink button background */
+    color: var(--black); /* Button text color */
+    border: 1px solid var(--black); /* Black border */
+    padding: 0.5vw 1.5vw; /* Adjust padding */
+    border-radius: 0.3vw; /* Adds rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.homeButtons:hover {
+    background-color: var(--accent-color); /* Hover effect color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.homeButtons:active {
+    background-color: var(--lavender-purple); /* Clicked effect */
+}
+
+@keyframes fadeGrowTulip {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(0.5vw); /* Start small and lower */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Fully hidden */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); /* End at full size and position */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%); /* Fully visible */
+    }
+}
+
+.tulip2-container {
+    position: absolute; /* Change to absolute for positioning */
+    bottom: 0%; /* Adjust as necessary */
+    left: 1vw; /* Align to the left side of the screen */
+    width: 10vw; /* Control the container width */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    rotate: 5deg;
+}
+
+.tulip2-line-art {
+    height: 25vw;
+    width: 10vw;
+    opacity: 0;
+    transform: scale(0.8) translateY(3.5vw); /* Start smaller and lower */
+    animation: fadeGrowTulip2 1s ease-out forwards; /* Smooth easing */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Updated gradient */
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+
+@keyframes fadeGrowTulip2 {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(3.5vw); /* Start small and lower */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Updated gradient */
+    
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); /* End at full size and position */
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 0%);
+    }
+}
+
+.name-container {
+    position: relative; /* Change from absolute to relative */
+    top: 0; /* Reset the position */
+    left: 50%;
+    margin-top: 25vh;
+    height: 25vh;
+    text-align: center;
+    font-family: 'nameFont';
+}
+
+.name {
+    font-size: 3vw; /* Make the name large */
+    color: var(--black);
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
+    animation-delay: 1s; /* Delay the name animation */
+}
+
+.nameCaption {
+    font-size: 2vw; /* Make the name large */
+    color: var(--black);
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInUp 1s ease-out 1s forwards; /* Animation for the name */
+    animation-delay: 1s; /* Delay the name animation */
+}
+
+.name-caption-container {
+    position: relative; /* Change from absolute to relative */
+    top: 0; /* Reset the position */
+    left: 50%;
+    margin-top: -20vh;
+    height: 50vh;
+    text-align: center;
+    font-family: 'nameFont';
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translate(-50%, 20px); /* Start lower */
+    }
+    100% {
+        opacity: 1; /* End visible */
+        transform: translate(-50%, 0); /* End at normal position */
+    }
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+section {
+    height: 100vh; /* Full viewport height for each section */
+    padding: 20px;
+    background-color: var(--pearl-white);
+    border-bottom: 2px solid var(--beige);
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: 'sectionFont';
+}
+
+.section-container {
+    max-width: 65vw; /* Constrains content to 80% of the viewport width */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: left; /* Aligns text to the left inside the container */
+    font-size: 1.4vw; /* Adjust font size for readability */
+    line-height: 1.6; /* Improves readability with proper line spacing */
+    font-family: 'sectionFont';
+}
+
+#about-section {
+    margin-top: 10vw;
+    background-color: var(--pearl-white);
+    text-align: left; /* Ensure text aligns properly */
+}
+
+.about-content {
+    position: relative;
+    bottom: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw; /* Space between text and images */
+}
+
+
+.about-images {
+    position: relative;
+    width: 15vw;
+}
+
+.pfp {
+    position: absolute; /* Overlay the image */
+    width: 16vw; /* Adjust size of the profile picture */
+    top: -20vw; /* Slightly adjust the position to fit the frame */
+    left:48.5vw;
+   
+}
+
+.frame {
+    position: absolute; /* Overlay the frame */
+    top: -22.25vw; /* Slightly adjust the position to fit the frame */
+    width: 24vw; /* Adjust size of the frame */
+    opacity: 60%;
+    left:45vw;
+
+}
+
+.about-text {
+    max-width: 60%; /* Constrain text width to 50% */
+    font-family: 'sectionFont';
+    font-size: 1.2vw;
+    line-height: 1.6;
+}
+
+
+
+
+#resume-section {
+    background-color: var(--pearl-white);
+}
+
+#experiences-section {
+    background-color: var(--pearl-white);
+}
+
+#projects-section {
+    background-color: var(--pearl-white);
+}
+
+footer {
+    background-color: var(--pearl-white);
+    color: var(--black);
+    padding: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0%;
+}

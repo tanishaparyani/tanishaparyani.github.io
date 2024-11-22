@@ -1,0 +1,105 @@
+<! hiiii DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fade" style="animation: fade ease 3.5s;">
+        <div class="navBar">
+            <div class="nav-left">
+                <h1 class="nav-name">tanisha ! </h1>
+            </div>
+            <div class="buttonGap">
+                <button class="homeButtons" id="home">Home</button>
+                <button class="homeButtons" id="about">About</button>
+                <button class="homeButtons" id="resume">Resume</button>
+                <button class="homeButtons" id="experiences">Experiences</button>
+                <button class="homeButtons" id="projects">Projects</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="tulip-container">
+        <img src="assets/tulip1.png" alt="Tulip Line Art" class="tulip-line-art">
+    </div>
+
+    <div class="tulip2-container">
+        <img src="assets/tulip2.png" alt="Tulip Line Art 2" class="tulip2-line-art">
+    </div>
+
+    <!--Home section-->
+    <section id="home-section">
+        <div class="name-container">
+            <h1 class="name">tanisha paryani</h1>
+        </div>
+        <div class="name-caption-container">
+            <p class="nameCaption">emerging full-stack developer with a focus in human-computer interaction</p>
+        </div>
+    </section>
+
+     <!-- About Section -->
+     <section id="about-section"> <!--separate section -->
+        <div class="section-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! My name is Tanisha Paryani and I'm an undergraduate Computer Science student at Georgia Institute of Technology with a passion for user-centric software design, artificial intelligence, sustainability, and mental health awareness. Through both research and personal projects, I've gained experience in software engineering and design.</p>
+                <p>Apart from my studies, I enjoy performing on my school's dance team, traveling, and baking!</p>
+            </div>
+            <div class="about-images">
+                <img class="pfp" src="assets/moi.png" alt="picture of me">
+                <img class="frame" src="assets/pookieframe.png" alt="picture frame">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resume Section -->
+    <section id="resume-section">
+        <div class="section-container">
+            <h2>Resume</h2>
+            <p>here is resume</p>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences-section">
+        <div class="section-container">
+            <h2>Experiences</h2>
+            <p> experiences experiences experiencesexperiences experiences experiences experiences experiences </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <p>Check out my latest projects below!</p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+        document.getElementById("about").onclick = function () {
+            document.getElementById("about-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("resume").onclick = function () {
+            document.getElementById("resume-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("experiences").onclick = function () {
+            document.getElementById("experiences-section").scrollIntoView({ behavior: "smooth" });
+        };
+        document.getElementById("projects").onclick = function () {
+            document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
+        };
+    </script>
+    
+
+</body>
+</html>
