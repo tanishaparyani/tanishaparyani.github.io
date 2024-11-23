@@ -181,7 +181,7 @@ body {
 }
 
 .nameCaption {
-    font-size: 2vw; /* Make the name large */
+    font-size: 1.5vw; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 1s ease-out 1s forwards; /* Animation for the name */
@@ -192,9 +192,10 @@ body {
     position: relative; /* Change from absolute to relative */
     top: 0; /* Reset the position */
     left: 50%;
-    margin-top: -20vh;
+    margin-top: -17vh;
     height: 50vh;
     text-align: center;
+    width: 40vw;
     font-family: 'nameFont';
 }
 
