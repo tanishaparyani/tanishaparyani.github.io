@@ -169,11 +169,11 @@ body {
     margin-top: 25vh;
     height: 25vh;
     text-align: center;
-    font-family: 'nameFont';
+    font-family: 'sectionFont';
 }
 
 .name {
-    font-size: 3vw; /* Make the name large */
+    font-size: 3.5vw; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
@@ -181,7 +181,7 @@ body {
 }
 
 .nameCaption {
-    font-size: 1.5vw; /* Make the name large */
+    font-size: 2vw; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 1s ease-out 1s forwards; /* Animation for the name */
@@ -233,6 +233,25 @@ section {
     font-family: 'sectionFont';
 }
 
+.socialmedia {
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 2vw; /* Add spacing between icons */
+    margin-top: 2vh; /* Space above the container */
+}
+
+.socialmedia img {
+    width: 3vw; /* Set a consistent size for the icons */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Dim the icon slightly */
+}
+
 #about-section {
     margin-top: 10vw;
     background-color: var(--pearl-white);
@@ -247,6 +266,12 @@ section {
     gap: 4vw; /* Space between text and images */
 }
 
+.about-text {
+    max-width: 60%; /* Constrain text width to 50% */
+    font-family: 'sectionFont';
+    font-size: 1.2vw;
+    line-height: 1.6;
+}
 
 .about-images {
     position: relative;
@@ -269,16 +294,6 @@ section {
     left:45vw;
 
 }
-
-.about-text {
-    max-width: 60%; /* Constrain text width to 50% */
-    font-family: 'sectionFont';
-    font-size: 1.2vw;
-    line-height: 1.6;
-}
-
-
-
 
 #resume-section {
     background-color: var(--pearl-white);
