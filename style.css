@@ -169,7 +169,7 @@ body {
     margin-top: 25vh;
     height: 25vh;
     text-align: center;
-    font-family: 'sectionFont';
+    font-family: 'nameFont';
 }
 
 .name {
@@ -196,7 +196,7 @@ body {
     height: 50vh;
     text-align: center;
     width: 40vw;
-    font-family: 'nameFont';
+    font-family: 'sectionFont';
 }
 
 @keyframes fadeInUp {
