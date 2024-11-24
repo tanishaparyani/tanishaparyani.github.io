@@ -54,7 +54,7 @@
     </section>
 
      <!-- About Section -->
-     <section id="about-section hidden"> <!--separate section -->
+     <section id="about-section" class="about-section"> <!--separate section -->
         <div class="section-container">
             <div class="about-text">
                 <h2>About Me</h2>
@@ -113,7 +113,7 @@
     </script>
 
     <script>
-        const aboutSection = document.querySelector('.about-section');
+        const aboutSection = document.querySelector('about-section');
 
         const observer = new IntersectionObserver(
             (entries, observer) => {

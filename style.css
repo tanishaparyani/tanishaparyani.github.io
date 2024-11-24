@@ -238,7 +238,6 @@ section {
     margin-left: 2vw;
     margin-top: -36.0vh; /* Space above the container */
     z-index: 10;
-    animation: fadeInUp 1s ease-out 2s forwards;
 }
 
 .socialmedia a {
