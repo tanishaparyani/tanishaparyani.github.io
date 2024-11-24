@@ -228,7 +228,7 @@ section {
     max-width: 65vw; /* Constrains content to 80% of the viewport width */
     margin: 0 auto; /* Centers the container horizontally */
     text-align: left; /* Aligns text to the left inside the container */
-    font-size: 1.4vw; /* Adjust font size for readability */
+    font-size: 1.40vw; /* Adjust font size for readability */
     line-height: 1.6; /* Improves readability with proper line spacing */
     font-family: 'sectionFont';
 }
@@ -236,7 +236,7 @@ section {
 .socialmedia {
     position: relative;
     margin-left: 2vw;
-    margin-top: -36vh; /* Space above the container */
+    margin-top: -36.0vh; /* Space above the container */
     z-index: 10;
 }
 
