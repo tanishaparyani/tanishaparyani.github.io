@@ -177,7 +177,6 @@ body {
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 0.5s ease-out 1s forwards; /* Animation for the name */
-    animation-delay: 1s; /* Delay the name animation */
 }
 
 .nameCaption {
@@ -185,7 +184,6 @@ body {
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
     animation: fadeInUp 0.5s ease-out 1.5s forwards; /* Animation for the name */
-    animation-delay: 1s; /* Delay the name animation */
 }
 
 .name-caption-container {
@@ -252,6 +250,7 @@ section {
     margin-right: 2vw;
     cursor: pointer; /* Show pointer cursor on hover */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
+    animation: fadeInUp 0.5s ease-out 2s forwards; 
 }
 
 .socialmedia img:hover {

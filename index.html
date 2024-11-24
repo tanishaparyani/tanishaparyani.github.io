@@ -69,15 +69,6 @@
         </div>
     </section>
 
-
-    <!-- Resume Section -->
-    <section id="resume-section">
-        <div class="section-container">
-            <h2>Resume</h2>
-            <p>here is resume</p>
-        </div>
-    </section>
-
     <!-- Experiences Section -->
     <section id="experiences-section">
         <div class="section-container">
@@ -102,7 +93,7 @@
             document.getElementById("about-section").scrollIntoView({ behavior: "smooth" });
         };
         document.getElementById("resume").onclick = function () {
-            document.getElementById("resume-section").scrollIntoView({ behavior: "smooth" });
+            window.open('path/to/your/resume.pdf', '_blank');
         };
         document.getElementById("experiences").onclick = function () {
             document.getElementById("experiences-section").scrollIntoView({ behavior: "smooth" });
