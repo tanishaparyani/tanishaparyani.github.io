@@ -234,21 +234,19 @@ section {
 }
 
 .socialmedia {
-    display: flex; /* Align items in a row */
-    justify-content: center; /* Center the icons horizontally */
-    gap: 2vw; /* Add spacing between icons */
-    margin-top: 2vh; /* Space above the container */
+    margin-left: 2vw;
+    margin-top: -36vh; /* Space above the container */
 }
 
 .socialmedia img {
-    width: 3vw; /* Set a consistent size for the icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 5vw; /* Set a consistent size for the icons */
+    margin-right: 2vw;
     cursor: pointer; /* Show pointer cursor on hover */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
 }
 
 .socialmedia img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
     opacity: 0.8; /* Dim the icon slightly */
 }
 
