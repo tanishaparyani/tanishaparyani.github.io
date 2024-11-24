@@ -234,13 +234,15 @@ section {
 }
 
 .socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
     margin-left: 2vw;
     margin-top: -36vh; /* Space above the container */
 }
 
 .socialmedia img {
     width: 5vw; /* Set a consistent size for the icons */
-    margin-right: 2vw;
     cursor: pointer; /* Show pointer cursor on hover */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
 }
@@ -249,6 +251,7 @@ section {
     transform: scale(1.2); /* Slightly enlarge on hover */
     opacity: 0.8; /* Dim the icon slightly */
 }
+
 
 #about-section {
     margin-top: 10vw;
