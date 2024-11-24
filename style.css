@@ -234,15 +234,20 @@ section {
 }
 
 .socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
     margin-left: 2vw;
     margin-top: -36vh; /* Space above the container */
 }
 
+.socialmedia a {
+    display: inline-block; /* Prevent extra whitespace and block styling */
+    text-decoration: none; /* Remove underline or dashes */
+    cursor: pointer; /* Ensure all icons are clickable */
+}
+
+
 .socialmedia img {
     width: 5vw; /* Set a consistent size for the icons */
+    margin-right: 2vw;
     cursor: pointer; /* Show pointer cursor on hover */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
 }
