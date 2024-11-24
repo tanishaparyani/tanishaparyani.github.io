@@ -54,7 +54,7 @@
     </section>
 
      <!-- About Section -->
-     <section id="about-section"> <!--separate section -->
+     <section id="about-section hidden"> <!--separate section -->
         <div class="section-container">
             <div class="about-text">
                 <h2>About Me</h2>
@@ -111,7 +111,24 @@
             document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
         };
     </script>
-    
+
+    <script>
+        const aboutSection = document.querySelector('.about-section');
+
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target); // Stop observing once it's visible
+                    }
+                });
+            },
+            { threshold: 0.2 } // Trigger when 20% of the section is visible
+        );
+
+        observer.observe(aboutSection);
+    </script>
 
 </body>
 </html>
