@@ -237,6 +237,7 @@ section {
     position: relative;
     margin-left: 2vw;
     margin-top: -36vh; /* Space above the container */
+    z-index: 10;
 }
 
 .socialmedia a {
