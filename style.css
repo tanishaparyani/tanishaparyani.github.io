@@ -234,6 +234,7 @@ section {
 }
 
 .socialmedia {
+    position: relative;
     margin-left: 2vw;
     margin-top: -36vh; /* Space above the container */
 }
