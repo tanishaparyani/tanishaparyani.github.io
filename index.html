@@ -113,22 +113,26 @@
     </script>
 
     <script>
-        const aboutSection = document.querySelector('about-section');
+        // Select the about section using the correct selector (e.g., a class or ID)
+        const aboutSection = document.querySelector('.about-section'); // Change '.about-section' as needed
 
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                        observer.unobserve(entry.target); // Stop observing once it's visible
-                    }
-                });
-            },
-            { threshold: 0.2 } // Trigger when 20% of the section is visible
-        );
+        if (aboutSection) {
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show'); // Add a class when it becomes visible
+                            observer.unobserve(entry.target); // Stop observing once it's visible
+                        }
+                    });
+                },
+                { threshold: 0.2 } // Trigger when 20% of the section is visible
+            );
 
-        observer.observe(aboutSection);
+            observer.observe(aboutSection); // Start observing the about section
+        } else {
+            console.error("The 'about-section' element was not found.");
+        }
     </script>
-
 </body>
 </html>
