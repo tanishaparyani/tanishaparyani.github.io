@@ -184,7 +184,7 @@ body {
     font-size: 2vw; /* Make the name large */
     color: var(--black);
     opacity: 0; /* Start with opacity 0 */
-    animation: fadeInUp 1s ease-out 1s forwards; /* Animation for the name */
+    animation: fadeInUp 0.5s ease-out 1.5s forwards; /* Animation for the name */
     animation-delay: 1s; /* Delay the name animation */
 }
 
@@ -238,6 +238,7 @@ section {
     margin-left: 2vw;
     margin-top: -36vh; /* Space above the container */
     z-index: 10;
+    animation: fadeInUp 1s ease-out 2s forwards;
 }
 
 .socialmedia a {
@@ -260,18 +261,18 @@ section {
 }
 
 
-#about-section {
+.about-section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly moved down */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
     margin-top: 10vw;
     background-color: var(--pearl-white);
     text-align: left; /* Ensure text aligns properly */
 }
 
-.about-content {
-    position: relative;
-    bottom: 10vw;
-    display: flex;
-    align-items: center;
-    gap: 4vw; /* Space between text and images */
+.about-section.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move into place */
 }
 
 .about-text {
