@@ -399,7 +399,7 @@ section { /* Full viewport height for each section */
 
 #projects-section {
     background-color: var(--pearl-white);
-    max-height: 200vh;
+    height: 100vh;
 }
 
 footer {
