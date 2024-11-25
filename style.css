@@ -25,10 +25,11 @@
     --pastel-pink: #f9d3de;
     --pearl-white: #F8F6F0;
     --lavender-purple: #e6d6ff;
-    --beige: #f5e1d3;
+    --beige: #f3efef;
     --rosepink:#e2d5d5;
     --accent-color: #cda8d6;
     --black: #000000;
+    --maude: #b0a19f;
 }
 
 body {
@@ -63,22 +64,25 @@ body {
     filter: brightness(0) invert(0) contrast(1.5);
 }
 .navBar {
+    position: sticky;
+    background-color: var(--beige);
+    opacity: 0.9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--pearl-white); /* Matches site theme */
     padding: 1vw 2vw; /* Adds padding for spacing */
     box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: sticky; /* Makes it stay on top while scrolling */
     top: 0;
     z-index: 10; /* Ensures it stays above other elements */
 }
 
 .nav-left {
+    position: relative;
     flex-grow: 0; /* Pushes buttons to the right */
 }
 
 .nav-name {
+    position: relative;
     font-family: 'MyCustomFont', cursive; /* Matches site font */
     color: var(--black); /* Text color */
     font-size: 1.8vw; /* Adjust size as needed */
@@ -212,8 +216,7 @@ html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-section {
-    height: 100vh; /* Full viewport height for each section */
+section { /* Full viewport height for each section */
     padding: 20px;
     background-color: var(--pearl-white);
     border-bottom: 2px solid var(--beige);
@@ -231,9 +234,13 @@ section {
     font-family: 'sectionFont';
 }
 
+#home-section {
+    height: 100vh;
+}
+
 .socialmedia {
     position: relative;
-    margin-left: 2vw;
+    margin-left: 8vw;
     margin-top: -36.0vh; /* Space above the container */
     z-index: 10;
 }
@@ -249,21 +256,22 @@ section {
     width: 5vw; /* Set a consistent size for the icons */
     margin-right: 2vw;
     cursor: pointer; /* Show pointer cursor on hover */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth hover effects */
     animation: fadeInUp 0.5s ease-out 2s forwards; 
+    opacity: 0; /* Start fully transparent */
 }
 
 .socialmedia img:hover {
     transform: scale(1.2); /* Slightly enlarge on hover */
     opacity: 0.8; /* Dim the icon slightly */
+    
 }
 
 
 .about-section {
+    height: 100vh;
     opacity: 0; /* Initially hidden */
     transform: translateY(20px); /* Slightly moved down */
     transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
-    margin-top: 10vw;
     background-color: var(--pearl-white);
     text-align: left; /* Ensure text aligns properly */
 }
@@ -274,6 +282,7 @@ section {
 }
 
 .about-text {
+    margin-top: 12vw;
     max-width: 50%; /* Constrain text width to 50% */
     font-family: 'sectionFont';
     font-size: 1.4vw;
@@ -305,33 +314,92 @@ section {
 
 
 #experiences-section {
+    height: 200vh;
     background-color: var(--pearl-white);
+    max-height: 200vh;
 }
 
 .timeline {
+    top: -7vw;
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #000; /* Central line color */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; /* Ensures it sits behind the content */
 }
 
 .time-container {
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    background-color: var(--rosepink);
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.time-container::after {
+    content: '';
+    position: absolute;
+    top: 15px; /* Matches the center of the entry */
+    width: 15px;
+    height: 15px;
+    background-color: #000; /* Dot color */
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff; /* Outline to match the timeline */
+}
+
+.time-container.left-container {
+    left: 0;
+    text-align: right;
+}
+
+.time-container.left-container::after {
+    right: -8px; /* Position the dot at the edge */
+}
+
+.time-container.right-container {
+    left: 50%;
+    text-align: left;
+}
+
+.time-container.right-container::after {
+    left: -8px; /* Position the dot at the edge */
 }
 
 .entry {
+    text-align: center;
     padding: 20px 30px;
-    position: relative;
     border-radius: 6px;
     font-size: 15px;
     background: #fff;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
 }
 
 
 #projects-section {
     background-color: var(--pearl-white);
+    max-height: 200vh;
 }
 
 footer {
