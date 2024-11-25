@@ -274,9 +274,9 @@ section {
 }
 
 .about-text {
-    max-width: 60%; /* Constrain text width to 50% */
+    max-width: 50%; /* Constrain text width to 50% */
     font-family: 'sectionFont';
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     line-height: 1.6;
 }
 
@@ -287,28 +287,48 @@ section {
 
 .pfp {
     position: absolute; /* Overlay the image */
-    width: 16vw; /* Adjust size of the profile picture */
-    top: -20vw; /* Slightly adjust the position to fit the frame */
-    left:48.5vw;
+    width: 20vw; /* Adjust size of the profile picture */
+    top: -26vw; /* Slightly adjust the position to fit the frame */
+    left: 40.5vw;
    
 }
 
 .frame {
     position: absolute; /* Overlay the frame */
-    top: -22.25vw; /* Slightly adjust the position to fit the frame */
-    width: 24vw; /* Adjust size of the frame */
+    top: -30vw; /* Slightly adjust the position to fit the frame */
+    width: 32vw; /* Adjust size of the frame */
     opacity: 60%;
-    left:45vw;
+    left:35vw;
 
 }
 
-#resume-section {
-    background-color: var(--pearl-white);
-}
+
 
 #experiences-section {
     background-color: var(--pearl-white);
 }
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.time-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: var(--rosepink);
+}
+
+.entry {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fff;
+}
+
 
 #projects-section {
     background-color: var(--pearl-white);
