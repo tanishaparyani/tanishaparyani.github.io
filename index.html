@@ -79,7 +79,9 @@
                             <small>September 2024- Present</small>
                             <p>Investigating how LLMs can provide explainable outputs and adapt in real-time based on user feedback, 
                                 specifically catering to the needs of neurodivergent users. The system aims to foster collaborative interactions,
-                                 continuously realigning responses to bridge understanding gaps and enhance user experience.</p>
+                                 continuously realigning responses to bridge understanding gaps and enhance user experience.
+                            </p>
+                            <span class="left-container-arrow"></span>
                         </div>
                     </div>
                     <div class="time-container right-container">
@@ -88,8 +90,10 @@
                             <h3>Attollo Engineering</h3>
                             <small>May 2024 - August 2024</small>
                             <p>Developed a full-stack Android Team Awareness Kit mobile application from scratch to interface with Attollo’s
-                                military-grade laser range finder. Prototyped with <a href="https://www.figma.com/design/FsJgTZLR8B9pcKwVQfvVvw/VAS-LRF-GUI-Low-Fidelity-Prototype?t=8ynBCS4tG5dKXBS8-1" target="_blank" rel="noopener noreferrer">Figma</a>
-                                
+                                military-grade laser range finder. Prototyped with <a href="https://www.figma.com/design/FsJgTZLR8B9pcKwVQfvV
+                                vw/VAS-LRF-GUI-Low-Fidelity-Prototype?t=8ynBCS4tG5dKXBS8-1" target="_blank" rel="noopener noreferrer">Figma</a>
+                            </p>
+                            <span class="right-container-arrow"></span>   
                         </div>
                     </div>
                     <div class="time-container left-container">
@@ -98,7 +102,20 @@
                             <h3>Healthcoco</h3>
                             <small>May 2023 - August 2023</small>
                             <p>Designed a dynamic dual-user interface on Android Studio, enabling over 20,000 doctors to seamlessly connect with patients
-                                in remote areas of India, significantly improving healthcare accessibility. Prototyped with Canva.</p>
+                                in remote areas of India, significantly improving healthcare accessibility. Prototyped with Canva.
+                            </p>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="time-container right-container">
+                        <div class="entry">
+                            <h2>Java Programming Tutor</h2>
+                            <h3>Best in Class Education Center</h3>
+                            <small>June 2022- May 2023</small>
+                            <p> Instructed students in Java programming, covering the basics of object-oriented programming, 
+                                administering interactive coding and math exercises for early beginners.
+                            </p>
+                            <span class="right-container-arrow"></span>
                         </div>
                     </div>
                 </div>
@@ -109,8 +126,21 @@
     <section id="projects-section">
         <div class="section-container">
             <h2>Projects</h2>
-            <p><a href="https://www.figma.com/design/f0HLhYsXV4gnYRiNaeCOM7/High-fidelity-Prototype?node-id=0-1&t=j3jcMzdU78tJOwdx-1" target="_blank" rel="noopener noreferrer">Aggregated Ticketing Platform Prototype</a></p>
-            <p>Check out my github for my latest projects!</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="https://www.figma.com/design/f0HLhYsXV4gnYRiNaeCOM7/High-fidelity-Prototype?node-id=0-1&t=j3jcMzdU78tJOwdx-1" 
+                       target="_blank" rel="noopener noreferrer">
+                        <h3>Aggregated Ticketing Platform Prototype</h3>
+                    </a>
+                    <p>A user-friendly prototype for managing event tickets seamlessly.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <h3>GitHub Portfolio</h3>
+                    </a>
+                    <p>Explore my latest coding projects and collaborations.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -137,26 +167,29 @@
     </script>
 
     <script>
-        // Select the about section using the correct selector (e.g., a class or ID)
-        const aboutSection = document.querySelector('.about-section'); // Change '.about-section' as needed
+        function setupObserver(sectionSelector) {
+            const section = document.querySelector(sectionSelector);
+            if(section) {
+                const observer = new IntersectionObserver(
+                    (entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('show'); // Add class when section is visible
+                                observer.unobserve(entry.target); // Stop observing after animation
+                            }
+                        });
+                    },
+                    { threshold: 0.2 }
+                );
 
-        if (aboutSection) {
-            const observer = new IntersectionObserver(
-                (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('show'); // Add a class when it becomes visible
-                            observer.unobserve(entry.target); // Stop observing once it's visible
-                        }
-                    });
-                },
-                { threshold: 0.2 } // Trigger when 20% of the section is visible
-            );
-
-            observer.observe(aboutSection); // Start observing the about section
-        } else {
-            console.error("The 'about-section' element was not found.");
+                observer.observe(section);
+            } else {
+                console.error("The section was not found");
+            }
         }
+
+        setupObserver('.about-section');
+        setupObserver('.experiences-section');
     </script>
 </body>
 </html>
