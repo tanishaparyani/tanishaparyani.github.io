@@ -135,10 +135,19 @@
                     <p>A user-friendly prototype for managing event tickets seamlessly.</p>
                 </div>
                 <div class="project-card">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        <h3>GitHub Portfolio</h3>
+                    <h3>Leaf & Loom: Eco-Friendly Marketplace</h3>
+                    <a href="https://github.com/tanishaparyani/HackGT_11.git" target="_blank" rel="noopener noreferrer">
+                        <p>Project</p>
                     </a>
-                    <p>Explore my latest coding projects and collaborations.</p>
+                    <p>Prototype</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <h3>LLM for Neurodivergent Job Support</h3>
+                    </a>
+                    <a href="https://www.figma.com/design/14hoCBRFqN90Ze0wPkThyR/LLM-ND-job-support?node-id=0-1&t=Tw0t4aWZlNjR11gB-1" target="_blank" rel="noopener noreferrer">
+                        <p>Prototype</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -164,6 +173,17 @@
         document.getElementById("projects").onclick = function () {
             document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
         };
+
+        document.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    card.style.setProperty('--delay', `${index * 0.2}s`); // Stagger animations
+                    card.classList.add('visible');
+                }
+            });
+        });
     </script>
 
     <script>

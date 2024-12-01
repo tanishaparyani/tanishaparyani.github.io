@@ -333,7 +333,7 @@ section { /* Full viewport height for each section */
     left: 60%;
     margin-left: -0.25vw; /* -3px converted to vw */
     z-index: 10;
-    animation: moveline 6s linear forwards;
+    animation: moveline 6s linear 3s forwards;
 }
 
 @keyframes moveline {
