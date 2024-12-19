@@ -321,6 +321,8 @@ section { /* Full viewport height for each section */
 .timeline {
     position: relative;
     max-width: 200vw; /* Keeping max-width for layout purposes */
+    right: 5%;
+   
 }
 
 .timeline::after {
@@ -396,6 +398,7 @@ section { /* Full viewport height for each section */
     font-size: 1vw; /* Keep font size in px for consistency */
     background: #fff;
     position: relative;
+    max-height: 20vw;
     box-shadow: 0 0.16vw 0.5vw rgba(0, 0, 0, 0.1); /* 0 2px 6px converted to vw */
 }
 
