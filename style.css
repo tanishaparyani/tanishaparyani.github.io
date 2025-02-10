@@ -413,9 +413,13 @@ section { /* Full viewport height for each section */
 
 #projects-section {
     background-color: var(--pearl-white);
-    height: 100vh;
+    height: 30vh;
 }
 
+#designs-section {
+    background-color: var(--pearl-white);
+    height: 100vh;
+}
 .project-grid {
     display: flex;
     flex-wrap: wrap;
